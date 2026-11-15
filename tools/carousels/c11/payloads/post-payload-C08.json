@@ -1,0 +1,62 @@
+{
+ "instagram": {
+  "channelId": "6ad6fb5e778b240e2f652c68",
+  "schedulingType": "automatic",
+  "mode": "shareNow",
+  "text": "لا تستصغره 🤍\nNever too small.\n\nA bag of bread in the rain. A warm greeting at the door. Don't belittle any good you can do today, even meeting someone with a cheerful face.\n\nSend this to the most cheerful face you know 🤍\nFollow @taqwalantern for daily reminders.\n\nSahih Muslim 2626, narrated by Abu Dharr (رضي الله عنه). Translation: HadeethEnc.com. Scenes from our Reel \"When Allah Loves a Servant\".\n\n#hadith #goodcharacter #islamicreminders #islam #حديث",
+  "assets": [
+   {
+    "image": {
+     "url": "https://raw.githubusercontent.com/aceaudit/TL-Media/main/carousels/C08-never-too-small/01-doorway.jpg",
+     "metadata": {
+      "altText": "Animated scene on a rainy night: a faceless young man hands a bag of bread to his neighbour at a lit doorway. Text: Never too small. A hadith in Arabic with English: \"Do not belittle any good deed, even if it be meeting your brother with a cheerful face.\" Sahih Muslim 2626, narrated by Abu Dharr."
+     }
+    }
+   },
+   {
+    "image": {
+     "url": "https://raw.githubusercontent.com/aceaudit/TL-Media/main/carousels/C08-never-too-small/02-greeting.jpg",
+     "metadata": {
+      "altText": "Animated scene at dawn on the same street: the young man walks past his neighbour, who stands at his door with his hand on his heart. Text: Who will you meet with a cheerful face today? Send this to them."
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "instagram": {
+    "type": "post",
+    "shouldShareToFeed": true,
+    "firstComment": "اذكر صاحب أجمل ابتسامة تعرفه 👇\nTag the most cheerful face you know 👇"
+   }
+  }
+ },
+ "tiktok": {
+  "channelId": "6ad6fbb2778b240e2f652ea3",
+  "schedulingType": "automatic",
+  "mode": "shareNow",
+  "text": "«لا تستصغره» 🤍\nحديث عن المعروف والابتسامة وطلاقة الوجه عند لقاء الناس\nأرسلها لصاحب أجمل ابتسامة تعرفها 🤍\n📖 صحيح مسلم 2626\nHadith about small good deeds and a cheerful face\n#المعروف #الابتسامة #حسن_الخلق #مقاطع_دينية #حديث",
+  "assets": [
+   {
+    "image": {
+     "url": "https://raw.githubusercontent.com/aceaudit/TL-Media/main/carousels/C08-never-too-small/01-doorway.jpg",
+     "metadata": {
+      "altText": "Animated scene on a rainy night: a faceless young man hands a bag of bread to his neighbour at a lit doorway. Text: Never too small. A hadith in Arabic with English: \"Do not belittle any good deed, even if it be meeting your brother with a cheerful face.\" Sahih Muslim 2626, narrated by Abu Dharr."
+     }
+    }
+   },
+   {
+    "image": {
+     "url": "https://raw.githubusercontent.com/aceaudit/TL-Media/main/carousels/C08-never-too-small/02-greeting.jpg",
+     "metadata": {
+      "altText": "Animated scene at dawn on the same street: the young man walks past his neighbour, who stands at his door with his hand on his heart. Text: Who will you meet with a cheerful face today? Send this to them."
+     }
+    }
+   }
+  ],
+  "metadata": {
+   "tiktok": {
+    "title": "لا تستصغره · Never too small"
+   }
+  }
+ }
+}

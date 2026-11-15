@@ -1,0 +1,38 @@
+{
+ "hadeethenc": {
+  "5141": {
+   "ar": "عَنِ ابْنِ عَبَّاسٍ رضي الله عنهما: أَنَّ نَبِيَّ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ كَانَ يَقُولُ عِنْدَ الْكَرْبِ: «لَا إِلَهَ إِلَّا اللهُ الْعَظِيمُ الْحَلِيمُ، لَا إِلَهَ إِلَّا اللهُ رَبُّ الْعَرْشِ الْعَظِيمِ، لَا إِلَهَ إِلَّا اللهُ رَبُّ السَّمَاوَاتِ وَرَبُّ الْأَرْضِ وَرَبُّ الْعَرْشِ الْكَرِيمِ».",
+   "ar_sha": "3664c07fb48d0b666b4f3061901b23620c9f6a2349238c1330fab2db0d19f86d",
+   "en": "Ibn ‘Abbās (may Allah be pleased with him and his father) reported: The Prophet of Allah (may Allah's peace and blessings be upon him) used to say during times of distress: \"There is no god but Allah, the Most Great, the Forbearing. There is no god but Allah, the Lord of the Mighty Throne. There is no god but Allah, the Lord of the heavens, the Lord of the earth, and the Lord of the Noble Throne.\"",
+   "en_sha": "b4e66e214c1b97fd03afd7903ce8c8446119741ef9d9ac39c0a471935a9ef107"
+  },
+  "5488": {
+   "ar": "عَنْ عَبْدِ اللهِ بْنِ عُمَرَ رضي الله عنهما قَالَ: كَانَ مِنْ دُعَاءِ رَسُولِ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ: «اللهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ زَوَالِ نِعْمَتِكَ، وَتَحَوُّلِ عَافِيَتِكَ، وَفُجَاءَةِ نِقْمَتِكَ، وَجَمِيعِ سَخَطِكَ».",
+   "ar_sha": "51c8bf94aa432ce624a36785f59b35d9641757775bc1efe5ee76f66063205516",
+   "en": "‘Abdullah ibn ‘Umar (may Allah be pleased with him and his father) reported: The Messenger of Allah (may Allah's peace and blessings be upon him) used to supplicate, saying: \"O Allah, I seek refuge with You from the removal of Your favor, the change of Your well-being, the suddenness of Your calamity, and all of Your wrath.\"",
+   "en_sha": "7ccf3a539f35fc2c9d33c1cca5971c039dc322509be1854c6022396ed1b54fe9"
+  }
+ },
+ "qurancom": {
+  "21:87": {
+   "uth_sha": "c38a286f5cbb56dfd2a95492a40db9ccbb6e0aee9f242a3c1a9485cf486eaf28",
+   "en": "And ˹remember˺ when the Man of the Whale stormed off ˹from his city˺ in a rage, thinking We would not restrain him.<sup foot_note=76978>1</sup> Then in the ˹veils of˺ darkness<sup foot_note=76979>2</sup> he cried out, “There is no god ˹worthy of worship˺ except You. Glory be to You! I have certainly done wrong.”",
+   "en_sha": "bfcbaa24583613008445b107743a03403c00ede9febc60da481ded696190d387"
+  },
+  "3:173": {
+   "uth_sha": "b9d03fe93162be716ec6c63cff91693dcc4c78f60fdb21446985da8d3636d406",
+   "en": "Those who were warned, “Your enemies have mobilized their forces against you, so fear them,” the warning only made them grow stronger in faith and they replied, “Allah ˹alone˺ is sufficient ˹as an aid˺ for us and ˹He˺ is the best Protector.”",
+   "en_sha": "883ad8fb65aacd6f844c17e3859585339ae9022f11f435d29eca45d6313e9ccc"
+  },
+  "20:25": {
+   "uth_sha": "638e7c1cab464a0b98eca54d8bb80062e90b94fad8517674769fbc177fb12551",
+   "en": "Moses prayed, “My Lord! Uplift my heart for me,",
+   "en_sha": "915a62c826dd4023cfc73c608f1fe3046e395658f831ed5e20375481ee46e4c0"
+  },
+  "20:26": {
+   "uth_sha": "141820db0e3b53ae0061211db24cd2aa7b866f8e81e8ba02e46fc0159e9fe6ae",
+   "en": "and make my task easy,",
+   "en_sha": "f4bc30686af7b51b74ecbc5ef9f0d8f564eb2745453e84ec7e4b509c47fa0133"
+  }
+ }
+}
