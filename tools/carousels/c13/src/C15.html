@@ -1,0 +1,151 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:"Amiri";font-weight:400;src:url(file:///home/claude/c01/deps/node_modules/%40fontsource/amiri/files/amiri-arabic-400-normal.woff2) format("woff2");unicode-range:U+0600-06FF,U+0750-077F,U+0870-08FF,U+FB50-FDFF,U+FE70-FEFF,U+200C-200E,U+25CC;}
+@font-face{font-family:"Amiri";font-weight:700;src:url(file:///home/claude/c01/deps/node_modules/%40fontsource/amiri/files/amiri-arabic-700-normal.woff2) format("woff2");unicode-range:U+0600-06FF,U+0750-077F,U+0870-08FF,U+FB50-FDFF,U+FE70-FEFF,U+200C-200E,U+25CC;}
+@font-face{font-family:"Amiri";font-weight:400;src:url(file:///home/claude/c01/deps/node_modules/%40fontsource/amiri/files/amiri-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F;}
+@font-face{font-family:"Amiri";font-weight:700;src:url(file:///home/claude/c01/deps/node_modules/%40fontsource/amiri/files/amiri-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F;}
+@font-face{font-family:"Amiri Quran";src:url(file:///home/claude/c01/deps/node_modules/%40fontsource/amiri-quran/files/amiri-quran-arabic-400-normal.woff2) format("woff2");}
+@font-face{font-family:"Cormorant Garamond";font-weight:500;src:url(file:///home/claude/c01/deps/node_modules/%40fontsource/cormorant-garamond/files/cormorant-garamond-latin-500-normal.woff2) format("woff2");}
+@font-face{font-family:"Cormorant Garamond";font-weight:500;src:url(file:///home/claude/c01/deps/node_modules/%40fontsource/cormorant-garamond/files/cormorant-garamond-latin-ext-500-normal.woff2) format("woff2");unicode-range:U+0100-024F,U+1E00-1EFF;}
+@font-face{font-family:"Cormorant Garamond";font-weight:500;font-style:italic;src:url(file:///home/claude/c01/deps/node_modules/%40fontsource/cormorant-garamond/files/cormorant-garamond-latin-500-italic.woff2) format("woff2");}
+@font-face{font-family:"Cormorant Garamond";font-weight:600;src:url(file:///home/claude/c01/deps/node_modules/%40fontsource/cormorant-garamond/files/cormorant-garamond-latin-600-normal.woff2) format("woff2");}
+@font-face{font-family:"Marcellus";src:url(file:///home/claude/c01/deps/node_modules/%40fontsource/marcellus/files/marcellus-latin-400-normal.woff2) format("woff2");}
+@font-face{font-family:"Marcellus";src:url(file:///home/claude/c01/deps/node_modules/%40fontsource/marcellus/files/marcellus-latin-ext-400-normal.woff2) format("woff2");unicode-range:U+0100-02AF,U+02B0-02FF,U+1E00-1EFF;}
+@font-face{font-family:"Brackets";src:url(file:///home/claude/c01/deps/node_modules/%40fontsource/noto-serif/files/noto-serif-latin-ext-400-normal.woff2) format("woff2");unicode-range:U+02F9-02FA,U+0100-024F,U+1E00-1EFF;}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#000;width:1080px}
+.slide{width:1080px;height:1350px;position:relative;overflow:hidden;color:#F4EBDD;
+  background:radial-gradient(ellipse 820px 760px at 50% 44%,#1B3046 0%,#122337 48%,#0D1B2A 100%)}
+.slide.teal{background:radial-gradient(ellipse 820px 760px at 50% 44%,#1d4b52 0%,#173F45 40%,#0f2630 78%,#0D1B2A 100%)}
+.bg{position:absolute;inset:0;opacity:.07;background-size:120px 120px;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cg fill='none' stroke='%23D9A55B' stroke-width='1.2'%3E%3Crect x='35' y='35' width='50' height='50'/%3E%3Crect x='35' y='35' width='50' height='50' transform='rotate(45 60 60)'/%3E%3Cpath d='M0 60H25M95 60H120M60 0V25M60 95V120'/%3E%3C/g%3E%3C/svg%3E");
+  -webkit-mask-image:radial-gradient(ellipse 600px 560px at 50% 46%,transparent 40%,#000 100%)}
+.arch{position:absolute;inset:0;width:1080px;height:1350px}
+.glow{position:absolute;left:290px;top:120px;width:500px;height:500px;border-radius:50%;
+  background:radial-gradient(circle,rgba(246,213,142,.30) 0%,rgba(217,165,91,.10) 40%,transparent 70%)}
+.content{position:absolute;left:150px;right:150px;top:170px;bottom:178px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.count{font:400 24px/1 "Marcellus";letter-spacing:.24em;color:#D9A55B;margin-bottom:26px}
+.lab-ar{font:400 40px/1.5 "Amiri";color:#F6D58E}
+.lab-en{font:400 20px/1.3 "Marcellus";letter-spacing:.17em;text-transform:uppercase;color:#D9A55B;margin:4px 0 34px}
+.ar{font-family:"Amiri";font-weight:700;color:#FFF4DA;line-height:1.95;text-wrap:balance;text-shadow:0 0 24px rgba(246,213,142,.18)}
+.ar .ln{display:block}
+.ar.hadith{font-size:50px}
+.long .ar.hadith{font-size:38px;line-height:1.85}
+.long .en{font-size:27px;line-height:1.32}
+.mid .ar.hadith{font-size:44px}
+.mid .en{font-size:31px}
+.arwrap.quran{direction:rtl;display:block;font-family:"Amiri Quran";font-size:58px;line-height:2.1;text-wrap:balance}
+.ar.quran{font-family:"Amiri Quran";font-weight:400;font-size:inherit;line-height:inherit;display:inline}
+.vline{display:block;white-space:nowrap}
+.ayah{font-family:"Amiri Quran";color:#D9A55B;font-size:.82em;margin:0 .18em}
+.rule{display:flex;align-items:center;gap:14px;margin:26px 0 24px}
+.rule i{display:block;width:96px;height:1.5px;background:linear-gradient(90deg,transparent,#D9A55B)}
+.rule i:last-child{background:linear-gradient(270deg,transparent,#D9A55B)}
+.rule b{width:11px;height:11px;transform:rotate(45deg);background:#D9A55B}
+.en{font:500 34px/1.36 "Cormorant Garamond","Brackets","Amiri",serif;color:#F4EBDD;text-wrap:balance;max-width:770px}
+.k-quran .en{font-size:36px}
+.refs{margin-top:30px}
+.r1{font:400 21px/1.5 "Marcellus","Amiri";letter-spacing:.12em;text-transform:uppercase;color:#D9A55B}
+.r1 span{font-family:"Amiri";letter-spacing:0;font-size:24px}
+.r2{font:400 24px/1.6 "Amiri";color:#9FB1BF;margin-top:4px}
+.r3{font:500 italic 23px/1.45 "Cormorant Garamond","Amiri";color:#9FB1BF;margin-top:4px}
+.r3 span{font-style:normal;font-size:21px}
+.credit{font:500 italic 19px/1.3 "Cormorant Garamond";color:#9FB1BF;opacity:.85;margin-top:10px}
+.nm{font-family:"Cormorant Garamond";font-weight:600;font-variant-numeric:lining-nums;letter-spacing:.04em;font-size:1.18em;line-height:1}
+.pick span,.choice .num i{font-variant-numeric:lining-nums}
+.foot{position:absolute;left:0;right:0;bottom:70px;display:flex;align-items:center;justify-content:center;gap:12px}
+.foot img{height:46px}
+.foot span{font:400 21px/1 "Marcellus";letter-spacing:.16em;color:#D9A55B}
+.cover .content{top:120px}
+.bigmark{height:250px;filter:drop-shadow(0 0 28px rgba(246,213,142,.45));margin-bottom:22px}
+.c-ar{font:700 112px/1.5 "Amiri";color:#FFF4DA;text-shadow:0 0 34px rgba(246,213,142,.25)}
+.cover .rule{margin:34px 0 24px}
+.c-en{font:600 74px/1.08 "Cormorant Garamond";color:#F4EBDD}
+.c-en i{font-weight:500;font-style:italic;color:#F6D58E}
+.c-en .n{color:#D9A55B}
+.c-sub-ar{font:400 34px/1.5 "Amiri";color:#9FB1BF;margin-top:30px}
+.c-sub-en{font:400 19px/1.4 "Marcellus";letter-spacing:.16em;text-transform:uppercase;color:#D9A55B}
+.swipe{margin-top:34px;font:400 20px/1 "Marcellus","Amiri";letter-spacing:.2em;color:#F6D58E;opacity:.9}
+.swipe span{opacity:.5;margin:0 .3em} .swipe b{font-weight:400;letter-spacing:.05em}
+.end .content{top:130px}
+.midmark{height:170px;filter:drop-shadow(0 0 22px rgba(246,213,142,.45));margin-bottom:26px}
+.e-ar{font:700 60px/1.55 "Amiri";color:#FFF4DA}
+.e-en{font:500 italic 36px/1.2 "Cormorant Garamond";color:#F4EBDD;margin-bottom:22px}
+.e-ar2{font:400 40px/1.5 "Amiri";color:#F6D58E}
+.e-en2{font:500 italic 28px/1.2 "Cormorant Garamond";color:#F6D58E;margin-bottom:26px}
+.e-follow{font:500 30px/1.3 "Cormorant Garamond";color:#F4EBDD}
+.e-follow b{font-family:"Marcellus";font-weight:400;font-size:25px;letter-spacing:.08em;color:#D9A55B}
+.e-cred{font:500 italic 18px/1.45 "Cormorant Garamond";color:#9FB1BF;margin-top:28px}
+/* first slide that carries the hook and the item */
+.hooky .lab-ar{font-weight:700;font-size:62px;line-height:1.45;color:#FFF4DA;text-shadow:0 0 30px rgba(246,213,142,.22)}
+.hooky .lab-en{font-size:22px;margin-bottom:40px}
+/* hook + choices (1 or 2) */
+.hook-kicker{font:400 22px/1 "Marcellus";letter-spacing:.24em;text-transform:uppercase;color:#D9A55B;margin-bottom:30px}
+.hook-ar{font:700 76px/1.6 "Amiri";color:#FFF4DA;text-wrap:balance;text-shadow:0 0 30px rgba(246,213,142,.2)}
+.hook-en{font:500 italic 44px/1.22 "Cormorant Garamond";color:#F4EBDD;text-wrap:balance;max-width:760px;margin-top:10px}
+.q-ar{font:400 52px/1.5 "Amiri";color:#F6D58E;margin-top:34px}
+.q-en{font:600 34px/1.2 "Cormorant Garamond";color:#F6D58E}
+.pick{display:flex;gap:22px;margin-top:40px}
+.pick span{width:96px;height:96px;border-radius:50%;border:2.5px solid #D9A55B;display:flex;align-items:center;justify-content:center;font:600 46px/1 "Cormorant Garamond";color:#F6D58E;background:rgba(13,27,42,.35)}
+.choice{width:760px;border:2px solid rgba(217,165,91,.65);border-radius:28px;padding:28px 34px 30px;background:rgba(13,27,42,.45);display:flex;align-items:center;gap:30px;text-align:left;margin:14px 0}
+.choice .num{flex:none;width:110px;height:110px;border-radius:50%;border:2.5px solid #D9A55B;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#F6D58E}
+.choice .num b{font:700 44px/1 "Amiri"} .choice .num i{font:600 30px/1 "Cormorant Garamond";font-style:normal;opacity:.85}
+.choice .txt{flex:1}
+.choice .t-ar{font:700 42px/1.5 "Amiri";color:#FFF4DA;text-align:right}
+.choice .t-en{font:500 31px/1.22 "Cormorant Garamond";color:#F4EBDD}
+.vs{font:400 22px/1 "Marcellus";letter-spacing:.3em;color:#D9A55B;opacity:.8;margin:6px 0}
+.nudge{margin-top:34px;font:400 30px/1.4 "Amiri";color:#F6D58E}
+.nudge-en{font:500 italic 27px/1.2 "Cormorant Garamond";color:#F6D58E}
+@font-face{font-family:"ScheN";font-weight:700;src:url(file:///home/claude/c01/deps/node_modules/%40fontsource/scheherazade-new/files/scheherazade-new-arabic-700-normal.woff2) format("woff2");}
+.ar.sch{font-family:"ScheN";font-weight:700;line-height:1.6}
+.slide.ph{background:#0D1B2A}
+.photo{position:absolute;left:0;top:0;width:1080px;height:1350px}
+.photo.blur{filter:blur(14px) brightness(.55) saturate(.9);transform:scale(1.08)}
+.scrim{position:absolute;left:0;right:0}
+.scrim.b{bottom:0}.scrim.t{top:0}
+.content.pc{left:84px;right:84px;top:auto;bottom:auto;justify-content:flex-start}
+.ph .foot{bottom:40px}.ph .foot img{height:40px}.ph .foot span{font-size:19px}
+.kick{font:400 20px/1.3 "Marcellus";letter-spacing:.2em;text-transform:uppercase;color:#F6D58E;text-shadow:0 1px 10px rgba(0,0,0,.6)}
+.kick span{font:400 30px/1 "Amiri";letter-spacing:0}
+.cnt{font:400 22px/1 "Marcellus";letter-spacing:.24em;color:#F6D58E;text-shadow:0 1px 10px rgba(0,0,0,.7);margin-bottom:14px}
+.ph .arwrap.quran{font-size:60px;line-height:1.95;margin:6px 0 8px;text-shadow:0 2px 18px rgba(0,0,0,.6)}
+.ph .ar{text-shadow:0 2px 16px rgba(0,0,0,.65)}
+.ph .en{text-shadow:0 1px 12px rgba(0,0,0,.7);font-size:35px;max-width:860px}
+.ph .refs{margin-top:16px}
+.ph .r1{text-shadow:0 1px 8px rgba(0,0,0,.7)}
+.ph .r3{color:#D5DEE6;text-shadow:0 1px 8px rgba(0,0,0,.7)}
+.ph .credit{margin-top:6px;color:#C9D3DC;opacity:.9;text-shadow:0 1px 8px rgba(0,0,0,.7)}
+.ttl-ar{font:700 72px/1.4 "Amiri";color:#FFF4DA;text-shadow:0 2px 22px rgba(0,0,0,.65)}
+.ttl-en{font:600 46px/1.15 "Cormorant Garamond";color:#F4EBDD;text-shadow:0 1px 14px rgba(0,0,0,.65);margin-top:4px}
+.ttl-en i{font-weight:500;color:#F6D58E}
+.sub{font:400 20px/1.4 "Marcellus";letter-spacing:.18em;text-transform:uppercase;color:#F6D58E;margin-top:12px;text-shadow:0 1px 10px rgba(0,0,0,.7)}
+.ph .swipe{margin-top:22px;font-size:22px;opacity:1;text-shadow:0 1px 10px rgba(0,0,0,.7)}
+.ph .ar.hadith{font-size:48px;line-height:1.75}
+.send-ar{font:700 46px/1.5 "Amiri";color:#F6D58E;text-shadow:0 2px 14px rgba(0,0,0,.7);margin-top:26px}
+.send-en{font:500 italic 32px/1.2 "Cormorant Garamond";color:#F6D58E;text-shadow:0 1px 12px rgba(0,0,0,.7)}
+.times{display:flex;gap:18px;justify-content:center;margin:20px 0 4px}
+.times span{border:1.8px solid rgba(217,165,91,.8);border-radius:40px;padding:10px 24px 9px;font:400 20px/1.2 "Marcellus","Amiri";letter-spacing:.14em;color:#F6D58E;background:rgba(10,8,6,.35);text-shadow:0 1px 8px rgba(0,0,0,.6)}
+.times span b{font:700 27px/1 "Amiri";letter-spacing:0;margin-left:8px}
+.times span em{font-style:normal;font-family:"Cormorant Garamond";font-weight:600;font-variant-numeric:lining-nums;font-size:1.15em}
+/* send-card over a blurred plate */
+.card2{position:absolute;left:110px;right:110px;top:160px;height:1000px;border:2px solid #D9A55B;border-radius:22px;
+  background:rgba(12,10,14,.42);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 54px}
+.card2:before{content:"";position:absolute;inset:12px;border:1px solid rgba(217,165,91,.45);border-radius:14px}
+.card2 .corner{position:absolute;width:26px;height:26px;transform:rotate(45deg);border:2px solid #D9A55B;background:#2a1d14}
+.card2 .c1{left:-14px;top:-14px}.card2 .c2{right:-14px;top:-14px}.card2 .c3{left:-14px;bottom:-14px}.card2 .c4{right:-14px;bottom:-14px}
+.card2 .to{font:400 22px/1.3 "Marcellus","Amiri";letter-spacing:.22em;color:#D9A55B;margin-bottom:18px}
+.card2 .to span{font-family:"Amiri";letter-spacing:0;font-size:32px}
+.card2 .ar.big{font-size:66px;line-height:1.75;color:#FFF4DA;text-shadow:0 0 30px rgba(246,213,142,.25)}
+.card2 .en1{font:500 italic 36px/1.22 "Cormorant Garamond";color:#F4EBDD;margin-top:8px;max-width:640px}
+.card2 .seven{margin-top:30px;font:400 34px/1.5 "Amiri";color:#F6D58E}
+.card2 .seven-en{font:500 italic 28px/1.25 "Cormorant Garamond";color:#F6D58E;max-width:700px}
+.card2 .src{font:400 18px/1.5 "Marcellus";letter-spacing:.12em;color:#B8C4CE;margin-top:28px;text-transform:uppercase}
+.card2 .src span{font-family:"Amiri";letter-spacing:0;font-size:22px}
+</style></head><body><section class="slide ph" id="s1"><img class="photo" src="file:///home/claude/c13/plates/dawn.png"><div class="scrim t" style="height:380px;background:linear-gradient(180deg,rgba(30,14,4,.7) 0%,rgba(30,14,4,.4) 60%,rgba(30,14,4,0) 100%)"></div><div class="scrim b" style="height:760px;background:linear-gradient(180deg,rgba(20,12,8,0) 0%,rgba(20,12,8,.72) 26%,rgba(20,12,8,.93) 100%)"></div><div class="content pc" style="top:64px">
+<div class="ttl-ar" dir="rtl" lang="ar">قُلها ثلاثًا… صباحًا ومساءً</div>
+<div class="ttl-en">Say it three times, <i>morning and evening</i></div></div>
+<div class="content pc" style="top:640px"><div class="kick"><span dir="rtl" lang="ar">قال رسول الله ﷺ</span> · The Prophet ﷺ taught</div>
+<div class="ar hadith sch" dir="rtl" lang="ar" data-expect="بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ، فِي الْأَرْضِ، وَلَا فِي السَّمَاءِ، وَهُوَ السَّمِيعُ الْعَلِيمُ"><span class="ln">بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ،</span><span class="ln">فِي الْأَرْضِ، وَلَا فِي السَّمَاءِ،</span><span class="ln">وَهُوَ السَّمِيعُ الْعَلِيمُ</span></div>
+<div class="en" style="font-size:33px">“In the name of Allah, with Whose name nothing in the earth or the heaven can cause harm, and He is the All-Hearing, the All-Knowing”</div>
+<div class="times"><span><b dir="rtl" lang="ar">الصباح</b> MORNING · <em>3</em></span><span><b dir="rtl" lang="ar">المساء</b> EVENING · <em>3</em></span></div>
+<div class="refs"><div class="r1">Sunan Abi Dawud <span class="nm">5088</span> · Jami’ at-Tirmidhi <span class="nm">3388</span></div>
+<div class="r3">‘Uthman ibn ‘Affan (<span dir="rtl" lang="ar">رضي الله عنه</span>) · English: HadeethEnc.com</div></div></div><div class="foot"><img src="file:///home/claude/c01/src/mark-gold.png"><span>@taqwalantern</span></div></section></body></html>
